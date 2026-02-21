@@ -5,7 +5,7 @@
 export const PRIMARY_COLOR = '#2563eb';
 export const SECONDARY_COLOR = '#1d4ed8'; // Hover / badges
 
-export const DEFAULT_OPACITY = 0.7; // 70%
+export const DEFAULT_OPACITY = 1; // 100%
 export const DEFAULT_SIZE = 0.3; // 30% de la largeur
 export const DEFAULT_POSITION = 'center' as const; // 9 points: top-left, top, top-right, left, center, right, bottom-left, bottom, bottom-right
 export const DEFAULT_ROTATION = 0; // degrés
@@ -43,7 +43,7 @@ export interface WatermarkOptions {
 export const defaultWatermarkOptions: WatermarkOptions = {
   mode: 'simple',
   position: DEFAULT_POSITION,
-  opacity: 0.7, // 70% par défaut
+  opacity: 1, // 100% par défaut
   size: 0.3, // 30% largeur par défaut
   rotation: DEFAULT_ROTATION,
   gridCols: DEFAULT_GRID_COLS,
