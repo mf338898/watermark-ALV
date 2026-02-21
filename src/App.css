@@ -1,0 +1,96 @@
+.app {
+  min-height: 100vh;
+  background: #fafafa;
+  color: #111827;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.app-header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.app-header-logo {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.app-header-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.tagline {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .app-header-logo {
+    max-height: 56px;
+  }
+
+  .app-header-title {
+    font-size: 1.75rem;
+  }
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.panel {
+  flex: 1;
+}
+
+.panel-action {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .split {
+    flex-direction: row;
+    padding: 0 2rem 2rem;
+  }
+
+  .panel {
+    min-width: 0;
+  }
+
+  .panel-action {
+    flex: 0 0 45%;
+    max-width: 400px;
+  }
+
+  .panel-preview {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+.dropzone:hover {
+  border-color: #9ca3af !important;
+  background: #f9fafb;
+}
